@@ -1,0 +1,215 @@
+.about-hero {
+    background: url("../images/about-banner.jpg") center/cover no-repeat;
+    height: 70vh;
+}
+
+.about-hero-title {
+    font-size: 4.5rem !important;
+}
+
+.about-event-info {
+    margin-top: 1.5rem;
+    font-size: 1.5rem !important;
+}
+
+
+/* ABOUT CONFERENCE SECTION */
+
+.about-conference {
+    background: #f7f8f9;
+    padding: 90px 0;
+}
+
+.about-conference .container {
+    max-width: 1200px;
+}
+
+.about-conference-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1c3d72;
+    margin-bottom: 25px;
+    font-family: var(--ff-franklin-bold);
+}
+
+.about-conference-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    font-family: var(--ff-figtree);
+    text-align: justify;
+}
+
+
+/* ABOUT FHMCT SECTION */
+
+.about-fhmct {
+    background: #2c3f77;
+    padding: 90px 0;
+}
+
+.about-fhmct .container {
+    max-width: 1200px;
+}
+
+.about-fhmct-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-family: var(--ff-franklin-bold);
+    text-transform: uppercase;
+}
+
+.about-fhmct-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    font-family: var(--ff-figtree);
+    text-align: justify;
+}
+
+
+
+/* ABOUT PARUL UNIVERSITY SECTION */
+
+.about-parul {
+    background: #f3f4f6;
+    padding: 90px 0;
+}
+
+.about-parul .container {
+    max-width: 1200px;
+}
+
+.about-parul-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1c3d72;
+    margin-bottom: 25px;
+    font-family: var(--ff-franklin-bold);
+}
+
+.about-parul-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    font-family: var(--ff-figtree);
+    text-align: justify;
+}
+
+
+
+/* ADVISORY BOARD */
+
+.advisory-board {
+    background: #f3f4f6;
+    padding: 0 0 90px 0;
+}
+
+.advisory-title {
+    text-align: center;
+    font-size: 42px;
+    color: #1c3d72;
+    margin-bottom: 60px;
+    font-family: var(--ff-franklin-bold);
+}
+
+/* GRID */
+
+.advisory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+
+.advisory-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.advisory-card:hover {
+    transform: translateY(-6px);
+}
+
+.advisory-card h3 {
+    font-size: 20px;
+    color: #0b5fb3;
+    margin-bottom: 1rem;
+    font-family: var(--ff-franklin-bold);
+}
+
+.advisory-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    font-family: var(--ff-figtree);
+    text-align: center !important;
+}
+
+
+/* ORGANIZING COMMITTEE */
+
+.organizing-committee {
+    background: #f3f4f6;
+    padding: 0 0 90px 0;
+}
+
+.committee-title {
+    text-align: center;
+    font-size: 42px;
+    color: #1c3d72;
+    margin-bottom: 60px;
+    font-family: var(--ff-franklin-bold);
+}
+
+
+/* GRID */
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.committee-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.committee-card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* NAME */
+
+.committee-card h3 {
+    font-size: 1.5rem;
+    color: #0b5fb3;
+    margin-bottom: 15px;
+    font-family: var(--ff-franklin-bold);
+}
+
+
+/* DESCRIPTION */
+
+.committee-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    font-family: var(--ff-figtree);
+}
