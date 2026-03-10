@@ -8,8 +8,10 @@
 
 
 .contact-hero {
-    background: url("../images/contact-banner.png") center/cover no-repeat;
+    background: url("../images/contact-banner.webp") center/cover no-repeat;
     height: 60vh;
+    background-position: center 30%;
+
 }
 
 .contact-hero-title {
