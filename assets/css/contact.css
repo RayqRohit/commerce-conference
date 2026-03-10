@@ -1,0 +1,107 @@
+:root {
+    --ff-figtree: 'Figtree-Regular', sans-serif;
+    --ff-figtree-semibold: 'Figtree-SemiBold', sans-serif;
+    --ff-franklin: 'LibreFranklin-Regular', sans-serif;
+    --ff-franklin-bold: 'LibreFranklin-Bold', sans-serif;
+    --ff-franklin-black: 'LibreFranklin-Black', sans-serif;
+}
+
+
+.contact-hero {
+    background: url("../images/contact-banner.jpg") center/cover no-repeat;
+    height: 60vh;
+}
+
+.contact-hero-title {
+    font-size: 4.5rem !important;
+    text-align: center;
+    width: 100% !important;
+}
+
+.contact-hero-content {
+    margin-top: 6rem;
+}
+
+
+/* CONTACT DETAILS SECTION */
+
+.contact-details {
+    padding: 80px 0;
+    background: #f4f6f9;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* LEFT */
+
+.contact-heading {
+    font-size: 48px;
+    color: #2b3f73;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-family: var(--ff-franklin-bold);
+}
+
+.contact-note {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* RIGHT CARD */
+
+.contact-card {
+    background: #2b3f73;
+    color: white;
+    padding: 50px;
+    border-radius: 6px;
+}
+
+.venue-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: var(--ff-franklin-bold);
+}
+
+.venue-address {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.contact-list p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Clickable links inside the contact card */
+
+.contact-card-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 18px;
+    transition: color 0.25s ease;
+}
+
+.contact-card-item:hover {
+    color: #7ec8ff;
+}
+
+.contact-card-item i {
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: color 0.25s ease;
+}

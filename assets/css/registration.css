@@ -1,0 +1,192 @@
+/* REGISTRATION HERO */
+
+.registration-hero {
+    background: url("../images/registration-banner.jpg") center/cover no-repeat;
+    height: 60vh;
+}
+
+.registration-hero-title {
+    font-size: 4.5rem !important;
+    text-align: center;
+    width: 100% !important;
+}
+
+.registration-event-info {
+    margin-top: 1.5rem;
+    font-size: 1.5rem !important;
+}
+
+
+/* REGISTRATION FEES */
+
+.registration-fees {
+    padding: 90px 0;
+    background: #f5f6f8;
+}
+
+.registration-fees-title {
+    text-align: center;
+    font-size: 42px;
+    color: #1c3d72;
+    margin-bottom: 50px;
+    font-family: var(--ff-franklin-bold);
+}
+
+/* TABLE */
+
+.registration-table-wrapper {
+    overflow-x: auto;
+}
+
+.registration-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.registration-table thead {
+    background: #1c3d72;
+    color: #fff;
+}
+
+.registration-table th,
+.registration-table td {
+    padding: 18px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1.05rem;
+}
+
+.registration-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* NOTE */
+
+.registration-note {
+    margin-top: 35px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--ff-figtree);
+}
+
+/* BUTTON */
+
+.registration-btn-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.registration-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #1e5cb3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.registration-btn:hover {
+    background: #163f7a;
+}
+
+
+
+/* REGISTRATION DETAILS */
+
+.registration-details {
+    padding: 90px 0;
+    background: #f5f6f8;
+    text-align: center;
+}
+
+.registration-details-title {
+    font-size: 40px;
+    color: #1c3d72;
+    margin-bottom: 40px;
+    font-family: var(--ff-franklin-bold);
+}
+
+.registration-qr {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.registration-link {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.registration-link a {
+    color: #1e5cb3;
+    text-decoration: none;
+}
+
+.registration-or {
+    color: #555;
+}
+
+
+
+/* PAYMENT DETAILS */
+
+.payment-details {
+    padding: 90px 0;
+    background: #fff;
+}
+
+.payment-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #1c3d72;
+    font-family: var(--ff-franklin-bold);
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.payment-info p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.payment-note {
+    margin-top: 20px;
+    color: #555;
+}
+
+.payment-qr-wrapper {
+    text-align: center;
+}
+
+.payment-qr {
+    width: 240px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.payment-note {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    font-family: var(--ff-figtree);
+}
+
+.payment-grid {
+    max-width: 1200px;
+    margin: auto;
+}

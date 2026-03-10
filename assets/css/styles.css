@@ -1,3 +1,34 @@
+html {
+    scrollbar-width: none;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-scrollbar-thumb {
+    position: fixed;
+    right: 4px;
+    top: 0;
+    width: 5px;
+    border-radius: 10px;
+    background: #c4c5c5;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.custom-scrollbar-thumb.visible {
+    opacity: 1;
+}
+
 /* =========================================
    Font Face Declarations
    ========================================= */
@@ -66,7 +97,7 @@ body {
 
 .navbar {
     position: relative;
-    z-index: 2;
+    z-index: 9999;
     padding: 20px 0;
 }
 
@@ -90,12 +121,19 @@ body {
     font-weight: 600;
 }
 
+.logo-link {
+    text-decoration: none;
+    display: inline-flex;
+    cursor: pointer;
+}
+
 /* nav links */
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 25px;
+    margin-bottom: 0 !important;
 }
 
 .nav-links a {
@@ -451,4 +489,128 @@ body {
 
 .venue-title {
     font-family: var(--ff-franklin);
+}
+
+
+/* nav-toggle */
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar-close-btn {
+    display: none;
+}
+
+/* ===============================
+   Responsive Navbar
+   =============================== */
+
+@media (max-width:1200px) {
+
+    .hero-content h1 {
+        font-size: 3rem;
+        width: 80%;
+    }
+
+}
+
+/* ===============================
+   Tablet
+   =============================== */
+
+/* Sidebar Overlay */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-overlay.show {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width:1280px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 270px;
+        height: 100vh;
+        background: #1f346c;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 120px 30px 30px;
+        display: flex;
+        z-index: 999;
+        transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px 0;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-links.show {
+        left: 0;
+    }
+
+    /* ✕ Close Button */
+    .sidebar-close-btn {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        background: rgba(255, 255, 255, 0.12);
+        border: none;
+        color: white;
+        font-size: 18px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background 0.25s ease, transform 0.2s ease;
+    }
+
+    .sidebar-close-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+        transform: rotate(90deg);
+    }
+
+    .sidebar-close-btn i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
 }

@@ -1,0 +1,199 @@
+/* PUBLICATIONS HERO */
+@import url(./styles.css);
+
+/* Font variable shortcuts — mirrored from styles.css for IDE support */
+:root {
+    --ff-figtree: 'Figtree-Regular', sans-serif;
+    --ff-figtree-semibold: 'Figtree-SemiBold', sans-serif;
+    --ff-franklin: 'LibreFranklin-Regular', sans-serif;
+    --ff-franklin-bold: 'LibreFranklin-Bold', sans-serif;
+    --ff-franklin-black: 'LibreFranklin-Black', sans-serif;
+}
+
+
+.publications-hero {
+    background: url("../images/publication-banner.jpg") center/cover no-repeat;
+    height: 60vh;
+}
+
+.publications-hero-title {
+    font-size: 4.5rem !important;
+    text-align: center;
+    width: 100% !important;
+}
+
+.publications-event-info {
+    margin-top: 1.5rem;
+    font-size: 1.5rem !important;
+}
+
+/* WHO SHOULD ATTEND */
+
+.publications-attend {
+    background: #f5f6f8;
+    padding: 90px 0;
+}
+
+.publications-attend-content {
+    max-width: 900px;
+}
+
+.publications-attend-title {
+    font-size: 42px;
+    color: #1c3d72;
+    margin-bottom: 25px;
+    font-family: var(--ff-franklin-bold);
+}
+
+.publications-attend-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+    font-family: var(--ff-figtree);
+}
+
+
+/* PAPER SUBMISSION GUIDELINES */
+
+.publications-paper-guidelines {
+    background: #ffffff;
+    padding: 90px 0;
+}
+
+.publications-paper-title {
+    font-size: 40px;
+    color: #1c3d72;
+    margin-bottom: 35px;
+    font-family: var(--ff-franklin-bold);
+}
+
+.publications-paper-list {
+    padding-left: 20px;
+}
+
+.publications-paper-list li {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 14px;
+    color: #333;
+    font-family: var(--ff-figtree);
+}
+
+.publications-paper-list strong {
+    color: #1c3d72;
+}
+
+/* MAIL ID LINK */
+
+.publications-mail-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #1e5cb3;
+    text-decoration: none;
+    font-family: var(--ff-figtree);
+    transition: color 0.25s ease;
+}
+
+.publications-mail-link i {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.publications-mail-link:hover {
+    color: #0d3f8f;
+    text-decoration: underline;
+}
+
+/* IMPORTANT DATES SECTION */
+
+.important-dates {
+    position: relative;
+    padding: 120px 0;
+    background: url("../images/commonctabg.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.important-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.important-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.important-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: var(--ff-franklin-bold);
+}
+
+/* divider */
+
+.important-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.important-divider span {
+    width: 80px;
+    height: 2px;
+    background: #fff;
+}
+
+.important-divider i {
+    font-size: 20px;
+}
+
+/* cards */
+
+.important-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+/* card */
+
+.important-card {
+    width: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+/* header */
+
+.important-card-header {
+    background: #2f76c2;
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* body */
+
+.important-card-body {
+    padding: 40px 20px;
+}
+
+.important-card-body h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: var(--ff-franklin-black)
+}
+
+.important-card-body p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,209 @@
+/* TRACKS HERO */
+
+.tracks-hero {
+    background: url("../images/about-banner.jpg") center/cover no-repeat;
+    height: 60vh;
+}
+
+.tracks-hero-title {
+    font-size: 4.5rem !important;
+    text-align: center;
+    width: 100% !important;
+}
+
+.tracks-event-info {
+    margin-top: 1.5rem;
+    font-size: 1.5rem !important;
+}
+
+
+/* TRACKS SECTION */
+
+.tracks-section {
+    padding: 100px 0;
+    background: #f5f6f8;
+}
+
+.tracks-title {
+    text-align: center;
+    font-size: 42px;
+    color: #1c3d72;
+    margin-bottom: 20px;
+    font-family: var(--ff-franklin-bold);
+}
+
+
+/* DIVIDER */
+
+.tracks-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 70px;
+}
+
+.tracks-divider-line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #1c3d72;
+    opacity: 0.35;
+    border-radius: 2px;
+}
+
+.tracks-divider-icon {
+    font-size: 1.25rem;
+    color: #1c3d72;
+    line-height: 1;
+}
+
+
+/* TIMELINE */
+
+.tracks-timeline {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Vertical center line with circle caps at top and bottom */
+.tracks-timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 16px;
+    height: 100%;
+    transform: translateX(-50%);
+    background:
+        radial-gradient(circle at center, #d6d6d6 7px, transparent 7px) top center / 16px 16px no-repeat,
+        radial-gradient(circle at center, #d6d6d6 7px, transparent 7px) bottom center / 16px 16px no-repeat,
+        linear-gradient(#d6d6d6, #d6d6d6) center 16px / 4px calc(100% - 32px) no-repeat;
+}
+
+
+/* ITEM — flexbox row: label | number | card */
+
+.track-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+
+/* LABEL */
+
+.track-label {
+    flex: 1;
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 3px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1c3d72;
+    font-family: var(--ff-franklin-bold);
+    letter-spacing: 0.02em;
+}
+
+
+/* NUMBER BADGE — sits on the vertical line */
+
+.track-number {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    background: #1c3d72;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #f5f6f8;
+}
+
+
+/* CARD — right side with left accent border */
+
+.track-card {
+    flex: 1;
+    background: white;
+    padding: 28px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #1c3d72;
+    margin-left: 4rem;
+    position: relative;
+}
+
+/* Arrow pointer — right-pointing triangle at top-left of card */
+.track-card::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 14px solid #1c3d72;
+}
+
+/* Arrow pointer — left-pointing triangle for reversed cards */
+.track-item.reverse .track-card::before {
+    border-right: none;
+    border-left: 14px solid #1c3d72;
+    left: auto;
+    right: -14px;
+}
+
+
+/* REVERSE (even items) — card on left, label on right */
+
+.track-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.track-item.reverse .track-label {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 25px;
+}
+
+.track-item.reverse .track-card {
+    margin-left: 0;
+    margin-right: 4rem;
+    border-left: none;
+    border-right: 4px solid #1c3d72;
+}
+
+
+
+
+/* CARD INNER */
+
+.track-card h3 {
+    color: #1c3d72;
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+    font-family: var(--ff-franklin-bold);
+    line-height: 1.3;
+}
+
+.track-card ol {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.track-card li {
+    margin-bottom: 7px;
+    line-height: 1.6;
+    font-family: var(--ff-figtree);
+    color: #444;
+    font-size: 1.1rem;
+}
