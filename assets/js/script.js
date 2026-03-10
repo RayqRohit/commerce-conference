@@ -1,3 +1,10 @@
+const lenis = new Lenis({
+    autoRaf: true,
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true
+});
+
 const thumb = document.createElement('div');
 thumb.className = 'custom-scrollbar-thumb';
 document.body.appendChild(thumb);
@@ -61,4 +68,24 @@ navOverlay.addEventListener("click", closeSidebar);
 // Close sidebar when a nav link is clicked
 navLinks.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", closeSidebar);
+});
+
+
+// ─── SCROLL TO TOP BUTTON ──────────────────────────────────────
+const scrollTopBtn = document.createElement("button");
+scrollTopBtn.className = "scroll-top-btn";
+scrollTopBtn.setAttribute("aria-label", "Scroll to top");
+scrollTopBtn.innerHTML = '<i class="bi bi-chevron-up"></i>';
+document.body.appendChild(scrollTopBtn);
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        scrollTopBtn.classList.add("visible");
+    } else {
+        scrollTopBtn.classList.remove("visible");
+    }
+}, { passive: true });
+
+scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });

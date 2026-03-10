@@ -197,3 +197,531 @@
     font-size: 1rem;
     letter-spacing: 1px;
 }
+
+
+/* ================================================
+   RESPONSIVE — ALL SECTIONS
+   ================================================ */
+
+/* Tablet Wide: 768px – 1300px */
+@media (min-width:768px) and (max-width:1300px) {
+
+    /* header */
+    .publications-hero {
+        height: 55vh;
+    }
+
+    .publications-hero-title {
+        font-size: 3.5rem !important;
+    }
+
+    /* who should attend */
+    .publications-attend {
+        padding: 70px 0;
+    }
+
+    .publications-attend-title {
+        font-size: 36px;
+    }
+
+    /* paper guidelines */
+    .publications-paper-guidelines {
+        padding: 70px 0;
+    }
+
+    .publications-paper-title {
+        font-size: 34px;
+    }
+
+    /* important dates */
+    .important-dates {
+        padding: 90px 0;
+    }
+
+    .important-title {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* Tablet: 577px – 767px */
+@media (min-width:577px) and (max-width:767px) {
+
+    /* header */
+    .publications-hero {
+        height: 55vh;
+    }
+
+    .publications-hero-title {
+        font-size: 3rem !important;
+        line-height: 1.2;
+    }
+
+    .publications-hero-content {
+        margin-top: 5rem;
+    }
+
+    .logo-area img {
+        height: 52px;
+    }
+
+    /* who should attend */
+    .publications-attend {
+        padding: 60px 0;
+    }
+
+    .publications-attend-title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .publications-attend-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* paper guidelines */
+    .publications-paper-guidelines {
+        padding: 60px 0;
+    }
+
+    .publications-paper-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .publications-paper-list li {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 10px;
+    }
+
+    .publications-mail-link {
+        font-size: 1rem;
+    }
+
+    /* important dates */
+    .important-dates {
+        padding: 80px 0;
+    }
+
+    .important-title {
+        font-size: 2.2rem;
+    }
+
+    .important-divider {
+        margin-bottom: 40px;
+    }
+
+    .important-cards {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .important-card {
+        width: 240px;
+    }
+
+    .important-card-header {
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+
+    .important-card-body {
+        padding: 30px 15px;
+    }
+
+    .important-card-body h3 {
+        font-size: 2.5rem;
+    }
+
+    /* footer */
+    .conference-footer {
+        padding: 70px 0;
+    }
+
+}
+
+/* Large Mobile: 481px – 576px */
+@media (min-width:481px) and (max-width:576px) {
+
+    /* header */
+    .publications-hero {
+        height: 50vh;
+    }
+
+    .publications-hero-title {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+
+    .publications-hero-content {
+        margin-top: 5rem;
+    }
+
+    .logo-area img {
+        height: 50px;
+    }
+
+    /* who should attend */
+    .publications-attend {
+        padding: 55px 0;
+    }
+
+    .publications-attend-title {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .publications-attend-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* paper guidelines */
+    .publications-paper-guidelines {
+        padding: 55px 0;
+    }
+
+    .publications-paper-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .publications-paper-list {
+        padding-left: 16px;
+    }
+
+    .publications-paper-list li {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .publications-mail-link {
+        font-size: 0.95rem;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    /* important dates */
+    .important-dates {
+        padding: 70px 0;
+    }
+
+    .important-title {
+        font-size: 2rem;
+    }
+
+    .important-divider {
+        margin-bottom: 35px;
+    }
+
+    .important-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .important-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .important-card-header {
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+
+    .important-card-body {
+        padding: 28px 15px;
+    }
+
+    .important-card-body h3 {
+        font-size: 2.5rem;
+    }
+
+    /* footer */
+    .conference-footer {
+        padding: 60px 0;
+    }
+
+    .footer-text {
+        font-size: 15px;
+    }
+
+}
+
+/* Mobile: max-width 480px */
+@media (max-width:480px) {
+
+    /* header */
+    .publications-hero {
+        height: 50vh;
+    }
+
+    .publications-hero-title {
+        font-size: 2.2rem !important;
+        line-height: 1.3;
+    }
+
+    .publications-hero-content {
+        margin-top: 5rem;
+    }
+
+    .logo-area img {
+        height: 40px;
+    }
+
+    /* who should attend */
+    .publications-attend {
+        padding: 50px 0;
+    }
+
+    .publications-attend-title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .publications-attend-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* paper guidelines */
+    .publications-paper-guidelines {
+        padding: 50px 0;
+    }
+
+    .publications-paper-title {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .publications-paper-list {
+        padding-left: 14px;
+    }
+
+    .publications-paper-list li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .publications-mail-link {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    /* important dates */
+    .important-dates {
+        padding: 70px 0;
+    }
+
+    .important-title {
+        font-size: 2rem;
+    }
+
+    .important-divider {
+        margin-bottom: 30px;
+    }
+
+    .important-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .important-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .important-card-header {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .important-card-body {
+        padding: 24px 15px;
+    }
+
+    .important-card-body h3 {
+        font-size: 2.5rem;
+    }
+
+    /* footer */
+    .conference-footer {
+        padding: 60px 0;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    .venue-title {
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .venue-address {
+        font-size: 14px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .contact-item i {
+        font-size: 16px;
+    }
+
+}
+
+/* Small Mobile: max-width 376px */
+@media (max-width:376px) {
+
+    /* header */
+    .publications-hero {
+        height: 45vh;
+    }
+
+    .publications-hero-title {
+        font-size: 1.9rem !important;
+        line-height: 1.3;
+    }
+
+    .publications-hero-content {
+        margin-top: 5rem;
+    }
+
+    .logo-area img {
+        height: 38px;
+    }
+
+    /* who should attend */
+    .publications-attend {
+        padding: 45px 0;
+    }
+
+    .publications-attend-title {
+        font-size: 22px;
+    }
+
+    .publications-attend-text {
+        font-size: 0.95rem;
+    }
+
+    /* paper guidelines */
+    .publications-paper-guidelines {
+        padding: 45px 0;
+    }
+
+    .publications-paper-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .publications-paper-list {
+        padding-left: 12px;
+    }
+
+    .publications-paper-list li {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    .publications-mail-link {
+        font-size: 0.85rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* important dates */
+    .important-dates {
+        padding: 60px 0;
+    }
+
+    .important-title {
+        font-size: 1.7rem;
+    }
+
+    .important-divider {
+        margin-bottom: 25px;
+        gap: 10px;
+    }
+
+    .important-divider span {
+        width: 50px;
+    }
+
+    .important-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .important-card {
+        width: 100%;
+    }
+
+    .important-card-header {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .important-card-body {
+        padding: 20px 14px;
+    }
+
+    .important-card-body h3 {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+    }
+
+    .important-card-body p {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    /* footer */
+    .conference-footer {
+        padding: 55px 0;
+    }
+
+    .footer-logos img {
+        height: 40px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    .venue-title {
+        font-size: 15px;
+        margin-top: 22px;
+    }
+
+    .venue-address {
+        font-size: 13px;
+    }
+
+    .contact-item {
+        font-size: 13px;
+        gap: 7px;
+    }
+
+    .contact-item i {
+        font-size: 15px;
+    }
+
+}
