@@ -494,3 +494,267 @@
     }
 
 }
+
+
+
+
+/* PATRONS SECTION */
+
+.patrons {
+    padding: 90px 0;
+    background: #f4f6f9;
+    text-align: center;
+}
+
+/* TITLE */
+
+.section-title {
+    font-size: 40px;
+    color: #2b3f73;
+    margin-bottom: 25px;
+}
+
+/* DIVIDER */
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.section-divider span {
+    width: 70px;
+    height: 2px;
+    background: #2b3f73;
+}
+
+.section-divider i {
+    font-size: 20px;
+    color: #2b3f73;
+}
+
+
+/* GRID */
+
+.patrons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+
+/* CARD */
+
+.patron-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.patron-card h3 {
+    font-size: 22px;
+    color: #2b3f73;
+    margin-bottom: 8px;
+    font-family: var(--ff-franklin-bold);
+}
+
+.patron-role {
+    font-size: 1.1rem;
+    color: #6a7aa1;
+    margin-bottom: 6px;
+
+}
+
+.patron-tag {
+    font-size: 1rem;
+    color: #2b3f73;
+    font-weight: 600;
+}
+
+.patrons-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1c3d72;
+    margin-bottom: 40px;
+    font-family: var(--ff-franklin-bold);
+}
+
+
+
+
+
+/* DIGNITARIES SECTION */
+
+.dignitaries {
+    padding: 90px 0;
+    background: #2b3f73;
+    text-align: center;
+    color: white;
+}
+
+/* TITLE */
+
+.dignitary-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: var(--ff-franklin-bold);
+}
+
+/* DIVIDER */
+
+.dignitary-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.dignitary-divider span {
+    width: 70px;
+    height: 2px;
+    background: white;
+}
+
+.dignitary-divider i {
+    font-size: 20px;
+}
+
+
+/* GRID */
+
+.dignitary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* CARD */
+
+.dignitary-card {
+    background: #2f64a5;
+    padding: 35px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.dignitary-card:hover {
+    transform: translateY(-5px);
+}
+
+.dignitary-card img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+
+.dignitary-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.dignitary-role {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.dignitary-org {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+/* ================================================
+   RESPONSIVE — PATRONS & DIGNITARIES
+   ================================================ */
+
+/* Tablet Wide: 768px – 1300px */
+@media (min-width: 768px) and (max-width: 1300px) {
+    .patrons {
+        padding: 70px 0;
+    }
+
+    .patrons-title, .dignitary-title {
+        font-size: 36px;
+    }
+
+    .patrons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .dignitary-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Tablet: 577px – 767px */
+@media (min-width: 577px) and (max-width: 767px) {
+    .patrons, .dignitaries {
+        padding: 60px 0;
+    }
+
+    .patrons-title, .dignitary-title {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .section-divider, .dignitary-divider {
+        margin-bottom: 40px;
+    }
+
+    .patrons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .dignitary-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .patron-card img {
+        height: 250px;
+    }
+}
+
+/* Mobile: max-width 576px */
+@media (max-width: 576px) {
+    .patrons, .dignitaries {
+        padding: 50px 0;
+    }
+
+    .patrons-title, .dignitary-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .section-divider, .dignitary-divider {
+        margin-bottom: 35px;
+    }
+
+    .patrons-grid, .dignitary-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .patron-card img {
+        height: auto;
+    }
+
+    .dignitary-card {
+        padding: 25px 20px;
+    }
+}

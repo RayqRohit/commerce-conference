@@ -7,6 +7,11 @@
     .aim-image {
         margin-bottom: 2rem !important;
     }
+
+
+   
+
+
 }
 
 @media (min-width:577px) and (max-width:767px) {
@@ -109,6 +114,9 @@
     .hero-content {
         margin-top: 5rem;
     }
+
+   
+
 
 }
 
@@ -219,6 +227,10 @@
 
 @media (max-width : 480px) {
 
+    
+
+
+    /* conference aim */
 
     .conference-aim {
         padding: 60px 0;
