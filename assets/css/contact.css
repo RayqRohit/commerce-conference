@@ -659,12 +659,15 @@
 .dignitary-card h3 {
     font-size: 20px;
     margin-bottom: 8px;
+    font-family: var(--ff-franklin-bold);
 }
 
 .dignitary-role {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 8px;
+    letter-spacing: 1px;
+
 }
 
 .dignitary-org {
