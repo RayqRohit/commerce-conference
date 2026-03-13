@@ -12,7 +12,7 @@
 
 
 .publications-hero {
-    background: url("../images/publication-banner.jpg") center/cover no-repeat;
+    background: url("../images/publication-banner.webp") center/cover no-repeat;
     height: 60vh;
 }
 
@@ -112,7 +112,7 @@
 .important-dates {
     position: relative;
     padding: 120px 0;
-    background: url("../images/commonctabg.jpg") center/cover no-repeat;
+    background: url("../images/commonctabg.webp") center/cover no-repeat;
     background-attachment: fixed;
     color: #fff;
 }
