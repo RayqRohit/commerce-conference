@@ -629,7 +629,7 @@
 
 .dignitary-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -648,8 +648,10 @@
 
 .dignitary-card img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: 280px;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
     border-radius: 6px;
     margin-bottom: 20px;
 }
@@ -686,7 +688,8 @@
         padding: 70px 0;
     }
 
-    .patrons-title, .dignitary-title {
+    .patrons-title,
+    .dignitary-title {
         font-size: 36px;
     }
 
@@ -703,16 +706,20 @@
 
 /* Tablet: 577px – 767px */
 @media (min-width: 577px) and (max-width: 767px) {
-    .patrons, .dignitaries {
+
+    .patrons,
+    .dignitaries {
         padding: 60px 0;
     }
 
-    .patrons-title, .dignitary-title {
+    .patrons-title,
+    .dignitary-title {
         font-size: 32px;
         margin-bottom: 25px;
     }
 
-    .section-divider, .dignitary-divider {
+    .section-divider,
+    .dignitary-divider {
         margin-bottom: 40px;
     }
 
@@ -733,20 +740,25 @@
 
 /* Mobile: max-width 576px */
 @media (max-width: 576px) {
-    .patrons, .dignitaries {
+
+    .patrons,
+    .dignitaries {
         padding: 50px 0;
     }
 
-    .patrons-title, .dignitary-title {
+    .patrons-title,
+    .dignitary-title {
         font-size: 28px;
         margin-bottom: 20px;
     }
 
-    .section-divider, .dignitary-divider {
+    .section-divider,
+    .dignitary-divider {
         margin-bottom: 35px;
     }
 
-    .patrons-grid, .dignitary-grid {
+    .patrons-grid,
+    .dignitary-grid {
         grid-template-columns: 1fr;
         gap: 30px;
         max-width: 350px;
@@ -759,5 +771,10 @@
 
     .dignitary-card {
         padding: 25px 20px;
+    }
+
+    .dignitary-card img {
+        height: auto;
+        max-height: 400px;
     }
 }
