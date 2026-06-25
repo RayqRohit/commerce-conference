@@ -99,12 +99,87 @@
 }
 
 
+/* PARTNER COLLEGES SECTION */
+
+.about-partners {
+    background: #ffffff;
+    padding: 90px 0;
+}
+
+.about-partners .container {
+    max-width: 1200px;
+}
+
+.partners-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #1c3d72;
+    margin-bottom: 12px;
+    font-family: var(--ff-franklin-bold);
+}
+
+.partners-subtitle {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #556170;
+    margin-bottom: 35px;
+    font-family: var(--ff-figtree);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.partner-card {
+    background: linear-gradient(180deg, #f8fafc 0%, #eef3f8 100%);
+    border: 1px solid rgba(28, 61, 114, 0.08);
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 26px rgba(16, 24, 40, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(16, 24, 40, 0.12);
+}
+
+.partner-logo-wrap {
+    height: 180px;
+    padding: 20px;
+    border-radius: 14px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.partner-logo-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.partner-card h3 {
+    font-size: 22px;
+    color: #1c3d72;
+    margin-bottom: 0;
+    font-family: var(--ff-franklin-bold);
+}
+
+
 
 /* ADVISORY BOARD */
 
 .advisory-board {
     background: #f3f4f6;
-    padding: 0 0 90px 0;
+    padding: 80px 0 90px 0;
 }
 
 .advisory-title {
@@ -291,6 +366,25 @@
         line-height: 1.6;
     }
 
+    .about-partners {
+        padding: 60px 0;
+    }
+
+    .partners-title {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .partners-subtitle {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
     .advisory-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
@@ -367,6 +461,25 @@
     .about-parul-text {
         font-size: 1rem;
         line-height: 1.5;
+    }
+
+    .about-partners {
+        padding: 60px 0;
+    }
+
+    .partners-title {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .partners-subtitle {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
     }
 
     .advisory-grid {
@@ -449,9 +562,32 @@
         line-height: 1.4;
     }
 
+    .about-partners {
+        padding: 60px 0;
+    }
+
+    .partners-title {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .partners-subtitle {
+        font-size: 0.98rem;
+        margin-bottom: 25px;
+    }
+
+    .partners-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .partner-logo-wrap {
+        height: 160px;
+    }
+
 
     .advisory-board {
-        padding: 0 0 60px 0;
+        padding: 50px 0 60px 0;
     }
 
     .advisory-title {
@@ -587,7 +723,7 @@
 
 
     .advisory-board {
-        padding: 0 0 60px 0;
+        padding: 50px 0 60px 0;
     }
 
     .advisory-title {
